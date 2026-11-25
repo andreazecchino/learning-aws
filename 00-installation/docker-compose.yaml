@@ -17,8 +17,6 @@ services:
   aws-cli:
     image: amazon/aws-cli:2.42.1
     container_name: aws-cli
-    stdin_open: true
-    tty: true
     environment:
       AWS_ENDPOINT_URL: http://floci:4566
       AWS_DEFAULT_REGION: eu-south-1
