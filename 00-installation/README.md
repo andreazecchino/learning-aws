@@ -9,9 +9,9 @@ docker compose up -d floci
 ## 2. Run AWS CLI command
 
 ```bash
-docker compose run -q --rm aws-cli <command> # `entrypoint` is already set to `aws`
-# or set a temporary alias during the session
-alias aws='docker compose run -q --rm aws-cli'
+docker run --rm -it amazon/aws-cli --version
+# or set a temporary alias during the session by evaluating the file `env.sh`
+source env.sh
 ```
 
 ## 3. Verify the setup

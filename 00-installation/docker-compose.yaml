@@ -14,17 +14,6 @@ services:
     networks:
       - floci
 
-  aws-cli:
-    image: amazon/aws-cli:2.42.1
-    container_name: aws-cli
-    environment:
-      AWS_ENDPOINT_URL: http://floci:4566
-      AWS_DEFAULT_REGION: eu-south-1
-      AWS_ACCESS_KEY_ID: test
-      AWS_SECRET_ACCESS_KEY: test
-    networks:
-      - floci
-
 volumes:
   floci-data:
     name: floci-data
